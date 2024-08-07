@@ -23,8 +23,8 @@ const img_solario = '../imagens/beatrix/gif_beatrixPlort.gif';
 const imgIcon_solario = '../imagens/mapa/solario__icon-removebg-preview.png';
 
 //info campos de arco-iris
-const p1_campoArco = 'Aqui nos campos arco-íris, cada dia é como uma perfeita e interminável tarde preguiçosa. Do tipo que faz qualquer um querer se estirar na relva multicolorida e passar horas observando as nuvens de marshmallow bagando lentanmente pelo céu azu.';
-const p2_campoArco = 'Silmes gordos alegres e saltitantes saem de suas tocassubterrâneas e pulam pelas clareiras, sempre torcendo para pousar sobre um pedaço de <span class="destaque__link">alface-dágua</span>';
+const p1_campoArco = 'Aqui nos campos arco-íris, cada dia é como uma perfeita e interminável tarde preguiçosa. Do tipo que faz qualquer um querer se estirar na relva multicolorida e passar horas observando as nuvens de marshmallow vagando lentanmente pelo céu azu.';
+const p2_campoArco = 'Silmes gordos alegres e saltitantes saem de suas tocas subterrâneas e pulam pelas clareiras, sempre torcendo para pousar sobre um pedaço de <span class="destaque__link">alface-dágua</span>';
 const p3_campoArco = 'Exploradores cuidadosos também encontrarão fartas reservas de <span class="destaque__link">pedra-gelatinosa</span> ao longo das colinas e falésias, bem como esguichos de <span class="destaque__link">salmoura forte</span> próximoas margens do Mar de slime';
 const img_campoArco = '../imagens/recursos/alfaceDagua.png'
 const imgIcon_campoArco = '../imagens/mapa/camposArcoIris.webp';
