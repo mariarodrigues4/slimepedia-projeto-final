@@ -1,0 +1,1015 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lilita+One&display=swap');
+:root{
+    --cor-1-clara: #FFD0D0;
+    --cor-2-clara: #FF9EAA;
+    --cor-3-clara: #e68bc1;
+    --cor-4-clara: #ce7ffc;
+    --cor-5-clara: #9ad6e0;
+
+    --cor-destaque1: #F075AA;
+    --cor-destaque2: #ec374c;
+    --cor-destaque3: #850F8D;
+    --cor-destaque4: #5C2FC2;
+    --cor-destaque5: #10a5e0;
+
+    --cor-escura1: #5b1b47;
+    --cor-escura2: #8b2e5e;
+    --cor-escura3: rgb(54, 0, 68);
+    --cor-escura4: #404163;
+    --cor-escura5: #003246;
+
+}
+
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+
+}
+
+img{
+    width: 100%;
+}
+/*celular/ telas pequenas*/
+/*inicio das cooisas do nav*/
+nav{
+    background-color: var(--cor-2-clara);
+    height: 16vh;
+    width: 13vh;
+    position: fixed;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: .4s;
+    color: white;
+    z-index: 10;
+
+}
+
+.expandir{
+    width: 80vw;
+    height: 100vh;
+    transition: .4s;
+    border-right: 5px solid white;
+    
+}
+
+.titulo__menulateral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 2vw;
+    background-color: #F075AA;
+    border-radius: 25px;
+    gap: 3vw;
+}
+
+.icon__menulateral{
+    width: auto;
+    height: 14vh;
+    padding:1vh;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 0px white);
+
+}
+
+.titulo{
+    font-size: 1.8rem;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+nav ul li{
+    list-style-position: inside;
+    list-style-type: none;
+    margin-bottom: 0.2rem;
+    
+}
+
+nav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+nav a span{
+    color: white;
+    background-color: var(--cor-escura2);
+    border-radius: 13px;
+    padding: 6px 12px;
+    border: 3px solid var(--cor-escura1);
+}
+
+
+nav a img{
+    width: 30vw;
+    transition: .3s;
+
+}
+
+/*fim do nav*/
+
+
+/*body*/
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-3-clara);
+
+}
+
+.container__main{
+    margin-left: 0vw; /*esse container serve para deixar o main e o footer em uma mesma div para ficarem um em baixo do outro com o flexdirection cloum e ainda assim manter a barra lateral ocupando todo o espaço*/
+}
+
+header{
+    background-color: var(--cor-1-clara);
+}
+
+.slimeran2__logo{
+    width: 77vw;
+    margin-left: 24vw;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-3-clara);
+    margin: 3%;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+
+main h2{
+    color:var(--cor-destaque2);
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--cor-1-clara);
+    padding: 6px 5rem;
+    border-radius: 14px;
+
+}
+
+span{
+    color: var(--cor-destaque2);
+}
+
+
+.img__borda{
+    border-radius: 20px;
+    border: 3px solid white;
+    width: 40vw;
+}
+
+.container__textoCfoto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.container__textoCfoto img {
+    width: 50vw;
+}
+
+
+footer{
+    display: flex;
+    background-color: var(--cor-escura5);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer img {
+    width: 15vw;
+}
+/*fim do body geral de todas as paginas*/
+
+/*pagina MAPA*/
+
+.sessao_vertical{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    gap: 1vh;
+}
+.nav__mapa{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav__mapa__img{
+    width: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+/*classe para o botao da pagina mapa que estiver clicado*/
+.ativo{
+    filter: grayscale(0%);
+}
+
+/*animação de pulsar*/
+.clique_pulsar{
+    animation-duration: .3s;
+    animation-name: pulsar;
+
+}
+@keyframes pulsar {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+/*ideia para outro botao. é o botal do footer*/
+button:active{
+    transform: translateY(5px);
+    box-shadow: 0 6px 0 var(--cor-escura4);
+    transition: .1s;
+}
+
+/*fim da pagina MAPA*/
+
+/*início da página slime*/
+
+#bt_carrossel_esque, #bt_carrossel_direi {
+    cursor: pointer;
+    min-width: 8vw;
+    
+}
+
+.clique_pulsar_forte{
+    animation-duration: .3s;
+    animation-name: pulsar;
+}
+@keyframes pulsar {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+
+.carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: .5rem;
+}
+
+.carrossel img {
+    width: 70%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+
+    min-height: 70vh;
+    max-height: 70vh;
+    min-width: 65vw;
+
+    padding-top: 100px;
+    background-color: var(--cor-2-clara);
+    padding: 8%;
+    border-radius: 3rem;
+}
+
+.slime__card__titulo{
+    text-align: center;
+    color: var(--cor-destaque4);
+    background-color: #9ad6e0;
+    border-radius: 20px;
+    padding: .5rem 2rem;
+
+}
+
+.slime__card__conteudo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+}
+
+h4{
+    color: var(--cor-destaque3);
+}
+
+#bt_carrossel_esque{
+    z-index: 1;
+}
+
+#bt_carrossel_direi{
+    z-index: 1;
+}
+
+/*animacao de mexer o card ao clicar para trocar de conteudo*/
+.mexe_card_direita1{
+    animation-duration: .5s;
+    animation-name: mexeCardDireita1;
+}
+@keyframes mexeCardDireita1 {
+    0%{transform: translateX(0rem);}
+    100%{
+        transform: translateX(-8rem);
+        opacity: 0%;
+    }
+}
+
+.mexe_card_direita2{
+    animation-duration: .5s;
+    animation-name: mexeCardDireita2;
+}
+@keyframes mexeCardDireita2 {
+    0%{
+        transform: translateX(8rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity: 100%;
+    }
+}
+
+.mexe_card_esquerda1{
+    animation-duration: 1s;
+    animation-name: mexeCardEsquerda1;
+}
+@keyframes mexeCardEsquerda1 {
+    0%{transform: translateX(0rem);}
+    100%{
+        transform: translateX(8rem);
+        opacity: 0;
+    }
+}
+
+.mexe_card_esquerda2{
+    animation-duration: 1s;
+    animation-name: mexeCardEsquerda2;
+}
+@keyframes mexeCardEsquerda2 {
+    0%{
+        transform: translateX(-8rem);
+        opacity: 0;
+    
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity: 100%;
+    }
+}
+
+/*fim das congigurações da animação*/
+/*fim ddad pagina slime*/
+
+/*pagina de resursos*/
+table {
+    border: var(--cor-destaque3) solid 4px;
+    border-radius: 1rem;
+    border-spacing: 0px;
+    
+}
+
+th{
+    color: var(--cor-escura3);
+}
+
+th, td{
+    border: var(--cor-destaque3) solid 2px;
+    text-align: center;
+    padding: .5rem;
+    background-color: var(--cor-4-clara);
+
+}
+
+
+.table_celula{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table_celula p{
+    text-align: center;
+
+}
+
+
+.regiao{
+    width: 15vw;
+}
+
+.span_comida{
+    color: var(--cor-escura2);
+}
+
+.span_material{
+    color: var(--cor-escura5);
+}
+
+.container_filtro{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.container_filtro h3{
+    text-align: center;
+}
+
+.container_filtro_radio{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.filtro_tipo{
+    background-color: var(--cor-escura2);
+    color: var(--cor-3-clara);
+}
+
+.filtro_regiao{
+    background-color: var(--cor-escura3);
+    color: var(--cor-3-clara);
+
+}
+
+input[type=radio]{
+    accent-color: var(--cor-destaque2)
+}
+
+#bt_limpa_filtro{
+    text-align: center;
+    padding: 3px;
+    margin: 0 3rem;
+    border: none;
+    border-radius: .6rem;
+    background-color: var(--cor-5-clara);
+    color: var(--cor-escura5);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+/*fim da pagina de recursos*/
+
+/*inicio da pagina ciencia*/
+.sessao_textoCfotoCiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.container_conteudo_ciencia_primario{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container_conteudo_ciencia_primario img {
+    width: 40%;
+}
+
+.container_ciencia_azul{
+    background-image: url(../imagens/background/background_faixa_azul.png);
+
+    position: relative;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 3rem 3rem;
+    width: 100vw;
+}
+
+.container_ciencia_azul_faixa{
+    margin-top: 1.5rem;
+
+    display: inline-block;
+    position: relative;
+    width: 90vw;
+}
+
+.container_ciencia_azul_faixa_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#label_faixa_amarela_titulo{
+    position: absolute;
+    top: 0rem;
+
+    z-index: 9;
+    color: var(--cor-escura4);
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    
+    padding:  2rem;
+}
+
+.sessao_imagens{
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    
+}
+
+.botoes_ciencia{
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    gap: .2rem;
+    padding: .5rem;
+}
+
+.bt_ciencia{
+    width: 15vw;
+    background-color: var(--cor-escura5);
+    border-radius: .5rem;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+
+
+.sessao_imagens2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    left: 25vw;
+
+
+}
+
+
+#frase_ciencia{
+    background-color: #f9cf43;
+    color: var(--cor-escura4);
+    text-align: center;
+    padding: .4rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.sessao_texto{
+    margin: 8%;
+}
+
+.sessao_texto span{
+    color: #f9cf43;
+}
+
+.img_principal_ani{
+    animation-name: aumenta_desloca;
+    animation-duration: .4s;
+}
+@keyframes aumenta_desloca {
+    0%{
+        transform: rotate(0);
+        
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    60%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0);
+        
+    }
+}
+
+.clique_pulsar_pequeno{
+    animation-name: clique_pulsar_pequeno;
+    animation-duration: .3s;
+}
+@keyframes clique_pulsar_pequeno {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.04);}
+    100%{transform: scale(1);}
+}
+
+.borda_amarela{
+    border: #f9cf43 solid 4px;
+}
+
+/*fim da pagina ciencia*/
+
+/*parte para telas grandes*/
+@media (min-width:768px){
+    *{
+        font-size: 1.2rem;
+    }
+
+    .header{
+        display: flex;
+        position: relative;
+        height: 26vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_slimeran{
+        width: 100vw;
+        height: 27vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slimeran2__logo{
+        height: 25vh;
+        width: auto;
+        margin-left: 0vw;
+        align-self: center;
+    }
+
+    nav{
+        width: 20vh;
+        height: 26vh;
+    }
+
+    .expandir{
+        width: 25vw;
+    }
+
+    .icon__menulateral{
+        width: auto;
+        height: 23vh;
+    }
+
+    .titulo__menulateral{
+        margin: 1vh;
+        gap: 1vw;
+        padding: 0.5vh 0;
+    }
+
+    nav a img{
+        width: 6vw;
+        transition: .3s;
+    
+    }
+
+    nav a img:hover{
+        width: 7vw;
+        transition: .3s;
+    }
+    /*fim do nav*/
+
+    /*inico do padrao do site*/
+    main{
+        display: flex;
+        align-items: center;
+        height: auto;
+        margin: 1vh 15vh;
+    }
+
+    main img{
+        width: 30vw;
+    }
+
+    #foto_beatrix{
+        max-width: 500px;
+        height: 100%;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer img{
+        width: 4vw;
+    }
+    /*fim do padrao do site*/
+
+    /*pagina index*/
+    .container__textoCfoto{
+        flex-wrap: nowrap;
+        gap: 2rem;
+        margin: 2vh;
+        flex-direction: row;
+    }
+
+    .container__textoCfotoinv{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        margin: 2vh;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .container__textoCfoto img{
+        width: 30%;
+    }
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .img__borda{
+        width: 20vw;
+    }
+    /*fim do index*/
+
+    /*inicio da pagina mapa*/
+    
+    
+
+    .nav__mapa{
+        position: absolute;
+        flex-direction: column;
+        margin-top: 3.5rem;
+        padding-top: .5rem;
+        margin-left: .5rem;
+    }
+
+    .nav__mapa__img{
+        width: 4.5rem;
+    }
+
+    .sessao_vertical{
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        gap: 0;
+    }
+
+    .sessao_textoCfotoMapa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: .5rem 0 ;
+        margin-left: 8vw;
+        gap: 1rem;
+        
+    }
+
+    .texto_mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .texto_mapa img{
+        width: 10vw;
+    }
+
+    .sessao_textoCfotoMapa p{
+        font-size: 1rem;
+    }
+
+    .sessao_textoCfotoMapaConteudo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .ativo{
+        filter: grayscale(0%);
+    }
+    /*fim da pagina mapa*/
+
+    /*inicio da pagina slime*/
+    .carrossel img {
+        width: 40%;
+    }
+    
+    .card {
+    
+        max-height: 85vh;
+        min-width: 65vw;
+    }
+    
+  
+    
+    
+    
+    /*fim das congigurações da animação*/
+    /*fim ddad pagina slime*/
+
+    /*inicio da pagina recursos*/
+
+    .sessao_textoCfotoRecursos{
+        display: flex;
+        align-items: center;
+        margin: 0 10%;
+    }
+
+    .textoRecursos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    table img{
+        width: 30%;
+    }
+
+    table{
+        width: 50vw;
+    }
+
+    th{
+        border: var(--cor-destaque3) solid 4px;
+        padding: .3rem;
+    }
+
+    tr{
+        height: 1vh;
+    }
+
+    .regiao{
+        width: 8vw;
+    }
+
+    #bt_limpa_filtro{
+        padding: .3rem 3rem;
+    }
+
+    /*inicio da pagina ciencia*/
+    .borda_amarela{
+        border: #f9cf43 solid 3px;
+    }
+
+    .texto_ciencia{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sessao_textoCfotoCiencia{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 10%;
+    }   
+
+
+    .bt_ciencia:hover{
+        transform: scale(1.1);
+        transition: .3s;
+        border: #f9cf43 solid 5px;
+    }
+
+    .bt_ciencia{
+        width: 6.3vw;
+    }
+
+    /****/
+
+    .container_conteudo_ciencia_primario{
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .container_conteudo_ciencia_primario img {
+        width: 60%;
+    }
+    
+    .container_ciencia_azul{
+        height: 120vh;
+    }
+    
+    .container_ciencia_azul_faixa{
+        margin-top: 1.6rem;
+    
+        display: inline-block;
+        position: relative;
+        width: 35vw;
+    }
+
+    #label_faixa_amarela_titulo{
+        position: absolute;
+        top: .7rem;
+    
+        z-index: 9;
+        color: var(--cor-escura4);
+        font-size: 2.3rem;
+        font-weight: bold;
+        text-align: center;
+        
+        padding:  2rem;
+    }
+
+    
+    
+    .sessao_imagens{
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+        
+    }
+
+    .botoes_ciencia{
+        z-index: 8;
+    }
+    
+    
+    .sessao_imagens2{
+        width: 70%;
+        left: 29vw;
+        max-width: 21vw;
+    }
+
+    .sessao_imagens2 img{
+        width: 20vw;
+    }
+    
+    
+    #frase_ciencia{
+        background-color: #f9cf43;
+        color: var(--cor-escura4);
+        text-align: center;
+        padding: .4rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+    }
+    
+    .sessao_texto{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        width: 30vw;
+        gap: 1rem;
+    }
+
+    #parag_ciencia1, #parag_ciencia2{
+        font-size: 1rem;
+    }
+    
+    .sessao_horizontal_ciencia{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+    }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slimepedia</title>
+    <link rel="icon" href="../imagens/icones/pink_slime.webp">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <script src="../scripts/main.js" defer></script>
+    <script src="../scripts/recursos.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav class=""> 
+            
+            <div class="blobo-expandir">
+
+                <div class="titulo__menulateral">
+                    
+                    <img class="icon__menulateral" src="../imagens/icones/Slimepedia.png" alt="" id="bt_menulateral"></img>
+                
+                    <h2 class="titulo">SLIMEPÉDIA</h2>
+                </div>
+                <ul>
+                    <li><a href="index.html">
+                        <img src="../imagens/icones/solario__icon-removebg-preview.png" alt="Home">
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="mapa.html">
+                        <img src="../imagens/icones/camposArcoIris.webp" alt="Mapa">
+                        <span>Mapa</span>
+                    </a></li>
+                    <li><a href="slimes.html"><img src="../imagens/icones/pink_slime.webp" alt="Slime">
+                        <span>Slimes</span></a></li>
+                    <li><a href="recursos.html">
+                        <img src="../imagens/icones/pedraGelatinosa-removebg-preview.png" alt="Home">
+                        <span>Recursos</span>
+                    </a></li>
+                    <li><a href="ciencia.html">
+                        <img src="../imagens/icones/refinaria-removebg-preview.png" alt="Aparelho">
+                        <span>Ciência Slime</span>
+                    </a></li>
+                </ul>       
+            </div>
+        </nav>
+
+        <div class="container_slimeran">
+            <img src="../imagens/icones/SR2_E32021_trailer_GameLogo.png" alt="logo slime rancher" class="slimeran2__logo">
+        </div>
+    </header>
+
+    <div class="container__main">
+        
+        <main>
+            <h2>Recursos</h2>
+
+            <div class="sessao_textoCfotoRecursos">
+
+                <div class="textoRecursos">
+                    <p>Todos os itens e coletáveis que a <span>Ilha Arco-Íris</span> tem a oferecer! Nela podemos encontrar desde comida para alimentar nossos slimes até materias uteis para construir artefatos para nosso rancho.</p>
+                    <p>Em cada <span>região do mapa</span> é possivel encontrar diferentes recursos, então não se esqueça de dar uma olhada por ai!</p>
+                </div>
+
+                <img src="../imagens/beatrix/gif_beatrixPlort.gif" alt="Beatrix carrengando plorts">
+            </div>
+
+            <h2>Filtro de Pesquisa</h2>
+
+            <div class="container_filtro">
+                <div class="container_filtro_radio filtro_tipo">  
+                    <h3>TIPO</h3>
+
+                    <div class="container">
+                        <input type="radio"      id="tipo_comida" name="tipo" value="comida">
+                        <label for="tipo_comida">Comida</label>
+                    </div>
+
+                    <div class="container">
+                        <input type="radio" id="tipo_material" name="tipo" value="material">
+                        <label for="tipo_material">Material</label>
+                    </div>
+                </div>
+
+                <div class="container_filtro_radio filtro_regiao">
+                    <h3>REGIÃO</h3>
+
+                    <div class="container">
+                        <input type="radio" id="regiao_arcoiris" name="regiao" value="campoarco">
+                        <label for="regiao_arcoiris">Campos Arco-Íris</label>
+                    </div>
+                    
+                    <div class="container">
+                        <input type="radio" id="regiao_valeescaldante" name="regiao" value="valeescaldante">
+                        <label for="regiao_valeescaldante">Vale Escaldante</label>
+                    </div>
+                    <div class="container">
+                        <input type="radio" id="regiao_penhasconeve" name="regiao" value="penhasconeve">
+                        <label for="regiao_penhasconeve">Penhascos Cai Neve</label>
+                    </div>
+                    <div class="container">
+                        <input type="radio" id="regiao_costaestrelada" name="regiao" value="costa">
+                        <label for="regiao_costaestrelada">Costa Estrelada</label>
+                    </div>
+
+                    
+                    
+                    
+                </div>
+
+            </div>
+            <button id="bt_limpa_filtro">LIMPAR</button>
+
+
+            <table>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Nome</th>
+                    <th>Região</th>
+                </tr>
+                <tr class="visivel">
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/alfaceDagua.png" alt="alface-dagua">
+                            <p>Alface-d'água</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="campos de arco iris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/areiaSedosa.png" alt="areia sedosa">
+                            <p>Areia Sedosa</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/costaEstrelada.webp" alt="costa Estrelada">
+
+                        <p class="regiao_costa">Costa Estrelada</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/baterrabaCoracao.png" alt="Beterraba Coração">
+                            <p>Beterraba Coração</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/costaEstrelada.webp" alt="costa Estrelada">
+
+                        <p class="regiao_costa">Costa Estrelada</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/cebolaBizarra.png" alt="Cebola Bizarra">
+                            <p>Cebola Bizarra</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/valeEscaldante.png" alt="Vale Escaldante">
+
+                        <p class="regiao_vale">Vale Escaldante</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/cenoura.png" alt="Cenoura">
+                            <p>Cenoura</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="campos de arco iris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/ceraZumZum.png" alt="Cera Zum Zum">
+                            <p>Cera Zum Zum</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/costaEstrelada.webp" alt="costa Estrelada">
+
+                        <p class="regiao_costa">Costa Estrelada</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/cuborango.png" alt="Cuborango">
+                            <p>Cuborango</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="campos de arco iris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/flocoDeNevePerfeito.png" alt="Floco de Neve Perfeito">
+                            <p>Floco de Neve Perfeito</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/IlhaNeve.webp
+                        " alt="Penhascos Cai Neve">
+
+                        <p class="regiao_penhasco">Penhascos Cai Neve</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/fossilSlime.png" alt="Fóssil Slime">
+                            <p>Fóssil Slime</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/IlhaNeve.webp
+                        " alt="Penhascos Cai Neve">
+
+                        <p class="regiao_penhasco">Penhascos Cai Neve</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/frutaPogo.png" alt="Fruta Pogo">
+                            <p>Fruta Pogo</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="campos de arco iris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/gagalinha.png" alt="Gagalinha">
+                            <p>Gagalinha</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="campos de arco iris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/galoso.png" alt="Galoso">
+                            <p>Galoso</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="campos de arco iris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/mangaMenta.png" alt="Manga de Menta">
+                            <p>Manga de Menta</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/costaEstrelada.webp" alt="costa Estrelada">
+
+                        <p class="regiao_costa">Costa Estrelada</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/melSelvagem.png" alt="Mel Selvagem">
+                            <p>Mel Selvagem</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/costaEstrelada.webp" alt="costa Estrelada">
+
+                        <p class="regiao_costa">Costa Estrelada</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/minerioRadiante.png" alt="Minério Radiante">
+                            <p>Minério Radiante</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/valeEscaldante.png" alt="Vale Escaldante">
+
+                        <p class="regiao_vale">Vale Escaldante</p>
+                    </div></td>
+                </tr>
+
+                
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/oleoPrimordial.png
+                            " alt="Óleo Primordial">
+                            <p>Óleo Primordial</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/valeEscaldante.png" alt="Vale Escaldante">
+
+                        <p class="regiao_vale">Vale Escaldante</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/pedraGelatinosa.png" alt="Pedra Gelatinosa">
+                            <p>Pedra Gelatinosa</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="Campos de Arco-Íris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_comida">Comida</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/romaRocha.png" alt="Romã Rocha">
+                            <p>Romã Rocha</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/valeEscaldante.png" alt="Vale Escaldante">
+
+                        <p class="regiao_vale">Vale Escaldante</p>
+                    </div></td>
+                </tr>
+
+                <tr>
+                    <td><span class="span_material">Material</span></td>
+                    <td><div class="table_celula">
+                            <img src="../imagens/recursos/salmouraForte.png" alt="Salmoura Forte">
+                            <p>Salmoura Forte</p>
+                        </div>
+                    </td>
+                    <td><div class="table_celula">
+                        <img class="regiao" src="../imagens/mapa/camposArcoIris.webp" alt="Campos de Arco-Íris">
+
+                        <p class="regiao_campo">Campos de Arco-Íris</p>
+                    </div></td>
+                </tr>
+            </table>
+        </main>
+
+
+        <footer>
+            <img src="../imagens/background/estrelas.webp" alt="estrelas">
+            
+            <p>Desenvolvido por uma amante de slime rancher</p>
+
+            <img src="../imagens/background/estrelas.webp" alt="estrelas">
+
+            <!--audios efitos da página-->
+            <audio id="som_bolum" src="../audios/bolum.mp3"></audio>
+            <audio id="som_nheu" src="../audios/nheu.mp3"></audio>
+            <audio id="som_plin" src="../audios/plin.mp3"></audio>
+            <audio id="som_plop" src="../audios/plop.mp3"></audio>
+            <audio id="som_ploqui" src="../audios/ploqui.mp3"></audio>
+            <audio id="som_tecu" src="../audios/tecu.mp3"></audio>
+            <audio id="som_tuque" src="../audios/tuque.mp3"></audio>
+        </footer>
+    </div>
+</body>
+</html>
